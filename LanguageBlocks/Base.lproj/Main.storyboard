@@ -1,16 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1S-rl-9ii"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uq0-lR-IgH"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vej-me-4ow">
+                                <rect key="frame" x="26" y="273" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11229903519999999" green="0.23813264270000001" blue="0.12782974750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3545984405" green="0.73402248349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" red="0.31837569980000002" green="1" blue="0.54620058140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ujN-of-jU3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-ue-Hv3">
+                                <rect key="frame" x="118" y="273" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11229903519999999" green="0.23813264270000001" blue="0.12782974750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3545984405" green="0.73402248349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Spanish">
+                                    <color key="titleColor" red="0.31837569980000002" green="1" blue="0.54620058140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gUP-Ba-4Za"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD7-IN-7kJ">
+                                <rect key="frame" x="210" y="273" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11229903519999999" green="0.23813264270000001" blue="0.12782974750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3545984405" green="0.73402248349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="French">
+                                    <color key="titleColor" red="0.31837569980000002" green="1" blue="0.54620058140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i2a-bC-s5e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-58-8w5">
+                                <rect key="frame" x="26" y="372" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11229903519999999" green="0.23813264270000001" blue="0.12782974750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3545984405" green="0.73402248349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mandarin">
+                                    <color key="titleColor" red="0.31837569980000002" green="1" blue="0.54620058140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="avh-Ws-cxK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umZ-DZ-e5q">
+                                <rect key="frame" x="118" y="372" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11229903519999999" green="0.23813264270000001" blue="0.12782974750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3545984405" green="0.73402248349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="German">
+                                    <color key="titleColor" red="0.31837569980000002" green="1" blue="0.54620058140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0aL-mp-bjw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPy-Tk-T2c">
+                                <rect key="frame" x="210" y="372" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11229903519999999" green="0.23813264270000001" blue="0.12782974750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3545984405" green="0.73402248349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UK">
+                                    <color key="titleColor" red="0.31837569980000002" green="1" blue="0.54620058140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mpW-6f-Ggq"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-Hp-Me6">
+                                <rect key="frame" x="0.0" y="59" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
